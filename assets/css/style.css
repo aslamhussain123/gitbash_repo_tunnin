@@ -1,0 +1,1098 @@
+/*========================================================================
+Project Name: Tunnin
+Version: 1
+Created on: 04/27/2021
+Created By: Unicorn Technologies Team
+========================================================================*/
+
+/*=================================================
+====================Global Css=====================*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'BebasKai';
+    src: url('../webfonts/BebasKai.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'BebasKai';
+    src: url('../webfonts/BebasKai.otf') format("opentype");
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #000000;
+    font-family: 'BebasKai',Serif;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 0;
+    color: #333333;
+}
+
+.wrapper section {
+    margin-bottom: 90px !important;
+}
+
+h2.title-ExtraBold {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    color: #fff;
+}
+
+.same-wd-btn {
+    text-transform: uppercase;
+    font-weight: 500;
+    max-width: 183px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+h2.second-heading {
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h3.third-heading {
+    font-size: 35px;
+    font-weight: 400;
+    color: #1A1B2F;
+}
+h3.third-heading span {
+    color: #d0a592;
+}/*==========================================================
+=====================Header css============================*/
+#header {
+    width: 100%;
+    background: #1A1B2F;
+    filter: drop-shadow(0px 0px 3px grey);
+}
+
+#header .top-header .custom-navBar {
+    padding: 10px 0;
+}
+
+#header .humburger button:focus {
+    outline: 5px auto #d7a18b !important;
+}
+
+#header .unicorn-logo img {
+    max-width: 150px;
+    width: 100%;
+}
+
+.top-header .navLinks li {
+    padding: 7px 20px 0 20px;
+}
+.top-header .navLinks li a{
+    text-transform: uppercase;
+    color: #fff !important;
+}
+.top-header .navLinks li a:hover {
+    color: #d7a18b !important;
+    transition: .5s;
+}
+.top-header .main-menu li.nav-item:last-child a {
+    background: #D0A592;
+    width: 100px;
+    text-align: center;
+    color: #1A1B2F !important;;
+    border-radius: 5px;
+}
+.top-header .main-menu li.nav-item:last-child a:hover{
+    background: #fff;
+    color: #D0A592 !important;
+    transition: .5s;
+}
+.navbar-light .navbar-toggler-icon {
+    filter: invert(3) !important;
+}
+.fixed {position: fixed;top: 0;left: 0;right: 0;border-bottom: 1px solid rgba(204, 204, 204, 0.22);
+    background: #fff;z-index: 1;transition: background-color 0.5s ease;margin-bottom: 20px;}
+/*=====================Header ENd======================
+=======================================================*/
+
+/*=====================================================
+============= home page================================*/
+#home .header-banner {
+    background: url('../images/home/header-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: #1a1b2f;*/
+}
+#home .header-banner img.hero-img{
+    display: none;
+}
+#home .header-banner  .inner-para {
+    padding-bottom: 150px;
+}
+#home .header-banner h2.title-ExtraBold {
+    text-transform: capitalize !important;
+    color: #fff;
+}
+
+.header-banner p {
+    margin-bottom: 15px;
+    color: #fff
+}
+
+.header-banner .btn-GetInTouch, .header-banner .btn-ourServises {
+    margin-top: 15px;
+}
+
+.header-banner .btn-GetInTouch {
+    background: #d0a592;
+    color: #1a1b2f;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 55px;
+    padding: 0;
+    line-height: 55px;
+}
+
+.header-banner .btn-GetInTouch:hover {
+    background: #fff;
+    border: 1px solid #d0a592;
+    color: #d7a18b;
+    transition: .5s;
+}
+.same-wd-btn:hover {
+    background: #fff;
+    border: 1px solid #d0a592;
+    color: #d7a18b;
+    transition: .5s;
+}
+.youtube-link-col img{
+    width: 100%;
+}
+.work-out {
+    text-align: right;
+}
+/*===========================================================
+====================client-sect Section=====================*/
+
+/*use for all*/
+.client-slider .slick-dotted.slick-slider {
+    width: 100% !important;
+    margin-right: auto;;
+    margin-left: auto;
+}
+
+.client-sect .client-slider .slider {
+    margin: 0 auto;
+}
+
+.client-slider .slick-slide {
+    margin: 0 !important;
+}
+.client-slider .slick-next, .client-slider .slick-prev {
+    border: 1px solid #D7A18B;
+    border-radius: 50% !important;
+    width: 27px !important;
+    height: 27px !important;
+    opacity: 1;
+}
+
+.client-slider .slick-prev:before, .client-slider .slick-next:before {
+    color: #D7A18B;
+    font-size: 19px;
+    line-height: .5;
+}
+
+.client-slider .slick-current, .client-slider .slick-active {
+    opacity: 1 !important;
+}
+
+.client-slider .slick-slide img {
+    width: 100%;
+}
+
+.client-slider .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+.client-slider .slider-img-col {
+    padding: 15px;
+    text-align: center;
+}
+.client-slider .slider-img-col h4 {
+    background: #1A1B2F;
+    padding: 8px;
+    color: #D7A18B;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.slick-dots li {
+    background: gray;
+    width: 40px !important;
+    height: 5px !important;
+}
+li.slick-active{
+    background: #D6A08A;
+}
+.client-slider .slick-dots li button:before{
+    content: '' !important;
+}
+.mobile-visible{
+    display: none;
+}
+/*.client-slider .slick-slide:nth-child(5n-4) h4 {
+    background: #d7a18b !important;
+    color: #000;
+}
+.client-slider .slick-slide:nth-child(8n-2) h4 {
+    background: #d7a18b !important;
+    color: #000;
+    }*/
+
+/*================== client-sect Section END==================
+=============================================================*/
+
+/*============== move to top button =========================*/
+#buttontop.show {
+    opacity: 1;
+    visibility: visible;
+}
+#buttontop {
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    cursor: pointer;
+}
+a#buttontop .fas {
+    font-size: 46px !important;
+    color: #787878;
+}
+/* ================== move top button end ====================*/
+
+/*================== testimonial slider ===================*/
+.testimonal-slider-col .slider-img-col {
+    position: relative;
+}
+.testimonal-slider-col h4{
+    background: #fff !important;
+}
+.testimonal-slider-col .testi-desc {
+    background: #D0A592;
+    padding: 40px 10px;
+    color: #fff;
+    min-height: 300px;
+}
+.testimonal-slider-col .testi-desc p {
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: 300;
+}
+.testimonal-slider-col .testi-desc .fa {
+    color: #1A1B2F;
+}
+.testimonal-slider-col img.test-img {
+    width: 155px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 63%;
+    transform: translate(-50%, -50%);
+}
+.testimonal-slider-col .name-design {
+    background: #F4F4F5;
+    padding: 100px 0 0 0;
+    min-height: 170px;
+}
+.testimonal-slider-col .name-design p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.testimonal-slider-col .name-design span {
+    color: #d0a592;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+/*================================================================
+========================= how-it-works ===========================*/
+#how-it-works .header-banner{
+    background: url('../images/how-works/how-work-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.uni-col-desc {
+    padding: 140px 0;
+}
+.perks-sect .perksdesc h3{
+   color: #D0A592;
+   margin-bottom: 10px;
+   font-size: 36px;
+}
+.perks-sect .perksdesc span {
+    border: 3px solid #d0a592;
+    width: 35px;
+    font-size: 25px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    line-height: 28px;
+    margin-right: 15px;
+}
+.perks-sect .perksimg {
+    margin-top: 30px;
+}
+.perks-col {
+    margin-bottom: 45px;
+}
+.perks-sect .perksimg img {
+    width: 200px;
+    margin: 0 auto;
+}
+.perk-tunnin-sect .perk-tunin-list li {
+    margin-bottom: 12px;
+    line-height: 28px;
+    list-style: square;
+}
+.perk-tunnin-sect .perk-tunin-list li::marker {
+    color: #d0a592;
+    font-size: 35px;
+}
+ul.perk-tunin-list li span {
+    vertical-align: super;
+}
+.perk-tunin-list li .fa-square {
+    color: #d0a592;
+}
+.perk-tunnin-sect .perks-wrapper {
+    box-shadow: 3px 4px 2px 0px #d2c6c685;
+    padding-bottom: 25px;
+}
+ul.perk-tunin-list {
+    padding-left: 35px;
+}
+
+.get-app-btn {
+    background: #d0a592;
+    color: #1a1b2f;
+    border-radius: 5px;
+    margin-top: 15px;
+    height: 55px;
+    line-height: 55px;
+    padding: 0;
+}
+section.getstarted-sect {
+    background: #F4F4F5;
+    padding: 40px 0 !important;
+}
+.get-started-col img {
+    position: absolute;
+    top: -39px;
+    right: 160px;
+    height: 350px;
+}
+/*========================= how-it-works END ========================
+====================================================================*/
+
+/*==================================================================
+========================= trainers  ===========================*/
+#trainers .header-banner{
+    background: url('../images/trainers-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.earning-cal-img-col img {
+    width: 400px;
+}
+.common-padding-col-banner {
+    padding-bottom: 173px;
+}
+.imready-btn{
+    max-width: 250px;
+    width: 100%;
+}
+input#loan-amount, input#loan-duration {
+    max-width: 580px;
+    width: 100%;
+}
+.earning-cal {
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+}
+.earning-cal p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+span.showResult {
+    background: #d0a592;
+    padding: 5px 22px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+span.showResult input {
+    background: #d0a592 !important;
+    color: #000 !important;
+    text-align: center;
+    max-width: 70px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+span.service-fee {
+    font-size: 12px;
+}
+.earning-cal input[type='range'] {
+    -webkit-appearance: none;
+    background-color: #818181;
+    height: 3px;
+    vertical-align: middle;
+}
+.earning-cal input[type='range']::-webkit-slider-thumb {
+    width: 15px;
+    -webkit-appearance: none;
+    height: 30px;
+    background: #ffffff;
+    border: 1px solid  #818181;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+.earning-cal span.f-span {
+    padding: 7px;
+    color: #d0a592;
+    max-width: 29px;
+    width: 100%;
+    display: inline-block;
+}
+p.left-padding-text{
+    padding-left: 8px;
+}
+/*========================= trainers END ======================
+=====================================================================*/
+
+/*================================================================
+========================= Term-of-use ===========================*/
+#term-of-use .header-banner{
+    background: url('../images/terms-of-use.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.common-sty h2.title-ExtraBold{
+    padding: 170px 0;
+    color: #ffffff;
+}
+.term-of-use-sect p{
+    margin: unset;
+    margin-bottom: 23px;
+}
+/*========================= Term-of-use END ========================
+====================================================================*/
+
+/*==================================================================
+========================= Privacy Policy ===========================*/
+#privacy-policy .header-banner{
+    background: url('../images/privacy-policy-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.privacy-policy p{
+    margin-bottom: 23px;
+}
+p.no-margin{
+    margin-bottom: 5px !important;
+}
+/*========================= Privacy Policy END ======================
+=====================================================================*/
+
+/*===================================================================
+========================= Contact us  ==============================*/
+#contact-us-page .header-banner{
+    background: url('../images/Contact-Us.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-overlay {
+    /*background: rgb(0 0 0 / 25%);*/
+    padding: 50px 0;
+}
+#contact-us-page .header-banner  h2.contact-heading {
+    padding: 67px 0 !important;
+}
+.contact-us-form {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px 10px;
+    border-radius: 10px;
+}
+button.btn.contact-sendbtn {
+    max-width: 145px;
+    background: #D0A592;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 0;
+    font-weight: 500;
+    border-radius: 5px;
+    height: 55px;
+    line-height: 55px;
+}
+button.btn.contact-sendbtn:hover {
+   background: #fff;
+   border: 1px solid #d0a592;
+   color: #d7a18b;
+   transition: .5s;
+}
+input[type='text'], input[type='email'], button[type='submit']{
+    height: 45px;
+    line-height: 45px;
+    border-radius: 30px;
+}
+.contact-us-form textarea{
+    border-radius: 10px;
+    min-height: 150px;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #d0a592;
+    box-shadow: 0 0 0 0.2rem rgb(208 165 146 / 8%);
+}
+/*========================= Contact us END ==========================
+=====================================================================*/
+
+/*==============================================================
+================== footer-sect section START====================*/
+.footer-top-space {
+    width: 100%;
+    height: 10px;
+}
+
+footer.footer-sect {
+    background: #1a1b2f;
+    width: 100%;
+    margin-top: 140px !important;
+    padding: 60px 0;
+    margin: 0 !important;
+}
+
+.footer-wrapper {
+    padding: 45px 0 15px 0;
+}
+
+.footer-sect p, .footer-sect li, .footer-sect a {
+    color: #fff;
+    font-weight: 300;
+}
+.footer-sect h4{
+    color: #D0A592;
+}
+.footer-wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+.footer-social-icons ul {
+    padding: 0;
+}
+.footer-wrapper ul li {
+    list-style-type: none;
+    background-size: 22px;
+}
+
+.footer-wrapper ul li:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.footer-wrapper ul li a:hover {
+    text-decoration: none;
+    color: #d7a18b;
+    transition: .5s;
+}
+.footer-wrapper .contact-us-icon i.fa {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.footer-wrapper .get-in-touch-logo {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-social-icons {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer-social-icons ul li {
+    display: inline-block;
+    padding-right: 10px
+}
+.footer-bottom {
+    background: #111227;
+}
+.footer-bottom ul {
+    margin: 0;
+}
+
+.footer-bottom ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.footer-bottom ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom ul li a, .footer-bottom p {
+    color: #fff;
+}
+
+.footer-social-icons ul li {
+    width: 37px;
+    height: 37px;
+    background: transparent;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    margin-right: 7px;
+    border: 2px solid;
+}
+
+.footer-social-icons ul li a {
+    vertical-align: middle;
+    color: #fff;
+}
+
+.footer-social-icons ul li a .fab {
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+.footer-social-icons ul li a:hover {
+    color: #fff;
+}
+
+.footer-social-icons ul li.facebook:hover {
+    background: #3b5998;
+    transition: .5s;
+    color: #fff;
+}
+
+.footer-social-icons ul li.instagram:hover {
+    background-image: linear-gradient(to top, #8a3ab9, #e95950, #bc2a8d, #fccc63, #fbad50, #cd486b, #4c68d7);
+    transition: .5s;
+    color: #fff;
+}
+
+.footer-social-icons ul li.twitter:hover {
+    background: #00acee;
+    transition: .5s;
+    color: #fff;
+}
+
+.footer-social-icons ul li.youtube:hover {
+    background: #f70000;
+    transition: .5s;
+    color: #fff;
+}
+.footer-bottom p a {
+    color: #fff;
+}
+.footer-ul-col{
+    border-left: 1px solid #635256 !important;
+    padding-left: 80px;
+}
+.footer-ul-col:last-child {
+    border-right: 1px solid #635256;
+}
+.app-col-foot img {
+    width: 115px;
+}
+.footer-cols:not(:first-child):not(:last-child) h4 {
+    padding-left: 65px;
+}
+.copytright p {
+    font-weight: 200;
+    font-size: 14px;
+}
+/*================== footer-sect section END=======================
+===================================================================*/
+
+
+/*===========================================================================================
+============================  MEDIA QUERY START  ============================================
+=============================================================================================*/
+
+/*=====================================================*/
+/*-------------- 1200px  media-------------------------*/
+@media only screen and (max-width: 1200px) {
+
+}
+
+/*=====================================================*/
+/*----------------1054px  media-----------------------*/
+@media only screen and (max-width: 1054px) {
+    .top-header .navLinks li {
+        padding: 7px 15px 0 15px;
+    }
+}
+
+/*=====================================================*/
+/*--------------- 991px  media------------------------*/
+@media only screen and (max-width: 991px) {
+
+    .container {
+        max-width: 860px !important;
+    }
+    .get-started-col img {
+        height: 356px;
+    }
+    .uni-col-desc {
+        padding: 25px 15px !important;
+    }
+    /*----------------header------------------------*/
+    #header .unicorn-logo img {
+        max-width: 150px;
+        width: auto;
+        display: block !important;
+    }
+
+    .top-header .navLinks li {
+        padding: 7px 5px 0px 5px;
+
+    }
+    /*--------------header end--------------------*/
+    /*-----------header banner--------------------*/
+    h2.title-ExtraBold {
+        font-size: 38px;
+    }
+
+    .inner-para p br {
+        display: none;
+    }
+    .get-in-touch-logo p br {
+        display: none;
+    }
+    /*---------header-banner end------------------*/
+    .footer-ul-col {
+        padding-left: 45px;
+    }
+    .footer-cols:not(:first-child):not(:last-child) h4 {
+        padding-left: 35px;
+    }
+}
+
+/*=====================================================*/
+/*---------------- 767px  media -----------------------*/
+
+@media only screen and (max-width: 767px) {
+/*#home .header-banner {
+    background: #1a1b2f;
+}
+ #home .header-banner img.hero-img{
+    display: block;
+    }*/
+    #home .header-col-desc{
+        padding: 0 15px 40px 15px !important;
+    }
+    .header-banner {
+       /* background-size: 100% 100% !important;*/
+        background-position: center !important;
+    }
+    .common-padding-col-banner {
+       padding-bottom: 0!important; 
+   }
+   #home .header-banner .inner-para {
+    padding-bottom: 0;
+}
+#buttontop.show {
+    margin-top: 20px;
+}
+.top-header .navLinks li a:after {
+    border-bottom: none;
+}
+
+.top-header .navLinks li a:hover {
+    border: none !important;
+}
+.top-header .navLinks li {
+    padding: 12px 5px 12px 5px;
+}
+
+.wrapper section {
+    margin-bottom: 0px !important;
+}
+
+#header .navbar-brand.unicorn-logo {
+    width: 50%;
+    float: left;
+}
+
+#header .humburger {
+    width: 48%;
+    float: right !important;
+    text-align: right;
+}
+
+.top-header .navLinks li:not(:last-child) {
+    text-align: left;
+    border-bottom: 1px solid #E6F3F8;
+}
+
+.top-header h6.title {
+    font-size: 15px;
+}
+
+h2.title-ExtraBold {
+    font-size: 32px;
+}
+
+.work-out {
+    text-align: center;
+}
+.trying-next .slick-slide:nth-child(2n) img {
+    height: auto;
+    margin-top: 0;
+}
+.trying-next .slick-slide:nth-child(2n) p {
+    top: 15px;
+}
+.get-started-col img {
+    height: auto;
+    position: unset;
+}
+.get-started-col {
+    margin-bottom: 25px;
+}
+.image-col{
+    margin-bottom: 25px;
+}
+ul.perk-tunin-list {
+    padding: 0;
+}
+.perk-tunin-list li .fa-square {
+    font-size: 12px !important;
+}
+.perks-sect .perksdesc h3 {
+    color: #D0A592;
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+.perks-sect .perksimg img {
+    width: 170px;
+    margin: 0 auto;
+}
+.perks-tunnin-cols.desc-col{
+    padding:0 14px 0 45px;
+}
+/*--------------footer------------------------------*/
+footer.footer-sect {
+    /*margin-top: 35px !important;*/
+}
+
+.footer-log-col img {
+    max-width: 150px;
+    width: 100%;
+}
+
+.footer-wrapper .footer-log-col {
+    background: none;
+    margin-top: 15px;
+}
+
+.footer-wrapper li a, .footer-wrapper p {
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    text-align: center !important;
+    font-size: 14px;
+}
+
+.footer-bottom .footer-social-icons {
+    text-align: center !important;
+    float: none;
+    margin-top: 12px !important;
+}
+
+.footer-wrapper .footer-links-col {
+    margin-bottom: 30px;
+    width: 33%;
+}
+
+.footer-wrapper .footer-log-col {
+    margin-bottom: 15px;
+}
+
+.footer-wrapper .footer-log-col .footer-logo-img {
+    width: 100%;
+    float: none;
+    margin-bottom: 15px;
+}
+
+.footer-wrapper .footer-log-col .footer-logo-img img {
+    margin-top: 20px;
+}
+
+.footer-wrapper .footer-log-col .get-in-touch-logo {
+    width: 100%;
+    margin-top: unset;
+    float: none;
+}
+    .footer-ul-col {
+        border-left: none !important;
+    }
+}
+
+/*=====================================================*/
+/*-------------------- 575px  media -------------------*/
+@media only screen and (max-width: 575px) {
+    input#loan-amount, input#loan-duration {
+        max-width: 580px;
+        width: 100%;
+        margin: 24px 0;
+    }
+    .same-wd-btn {
+        padding: 0;
+        font-size: 14px;
+    }
+    h2.title-ExtraBold {
+        font-size: 33px;
+    }
+    .common-sty h2.title-ExtraBold {
+        padding: 45px 0;
+    }
+    input.margin-top-field {
+        margin-top: 25px;
+    }
+    .mobile-visible{
+        display: block !important;
+    }
+    .desktop-visible{
+        display: none!important;
+    }
+    /*------------- footer --------------*/
+    .footer-wrapper {
+        padding: 0;
+    }
+
+    .footer-wrapper .footer-address-col {
+        margin-bottom: 30px;
+    }
+    .footer-wrapper .footer-address-col {
+        margin-bottom: 0;
+        width: 33%;
+        float: left;
+    }
+}
+
+/*=========================================================*/
+/*-----------------480px  media------------------*/
+@media only screen and (max-width: 480px) {
+    h2.title-ExtraBold {
+        font-size: 30px;
+    }
+
+    .client-slider .slick-dotted.slick-slider {
+        width: 92.5% !important;
+    }
+    h2.second-heading {
+        font-size: 35px;
+        text-align: center !important;
+    }
+    .footer-ul-col {
+        padding-left: 15px;
+    }
+    .footer-cols:not(:first-child):not(:last-child) h4 {
+        padding-left: 0;
+    }
+}
+
+/*===================================================*/
+/*-------------------- 380px  media---------------------*/
+@media only screen and (max-width: 380px) {
+    /*------------------------*/
+    h2.title-ExtraBold {
+        font-size: 28px;
+    }
+}
+/*==============================================*/
+/*---------------320px  media ------------------*/
+@media only screen and (max-width: 320px) {
+
+}
+
+/*------------------ END of CSS ----------------------------
+------------------------------------------------------------
